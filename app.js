@@ -142,13 +142,32 @@
     if (e.key === 'ArrowRight') showNext();
   });
 
-  // ---- Contact Form ----
+  // ---- Contact Form → mailto: ----
   const contactForm = document.getElementById('contact-form');
   const formSuccess = document.getElementById('form-success');
+  const CONTACT_EMAIL = 'farrarmattt@gmail.com';
 
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
+
+      const name = contactForm.querySelector('#name').value.trim();
+      const email = contactForm.querySelector('#email').value.trim();
+      const phone = contactForm.querySelector('#phone').value.trim();
+      const message = contactForm.querySelector('#message').value.trim();
+
+      const subject = encodeURIComponent('The Ponds — Enquiry from ' + name);
+      const body = encodeURIComponent(
+        'Name: ' + name + '\n' +
+        'Email: ' + email + '\n' +
+        (phone ? 'Telephone: ' + phone + '\n' : '') +
+        '\n' + (message || 'I would like to arrange a viewing.')
+      );
+
+      // Open the user's email client with the composed message
+      window.location.href = 'mailto:' + CONTACT_EMAIL + '?subject=' + subject + '&body=' + body;
+
+      // Show success state
       contactForm.style.display = 'none';
       formSuccess.classList.add('is-visible');
     });
