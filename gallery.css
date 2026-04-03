@@ -5,12 +5,12 @@
 /* --- Gallery Hero --- */
 .gallery-hero {
   padding: clamp(8rem, 12vw, 14rem) var(--space-6) clamp(var(--space-12), 6vw, var(--space-20));
-  text-align: center;
 }
 
 .gallery-hero-inner {
   max-width: var(--content-wide);
   margin: 0 auto;
+  text-align: center;
 }
 
 .gallery-page-title {
@@ -151,6 +151,14 @@
 
 .gp-item--wide {
   grid-column: span 2;
+}
+
+/* Show captions always on touch devices */
+@media (hover: none) {
+  .gp-item figcaption {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (min-width: 640px) {
