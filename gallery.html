@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — The Ponds</title>
+  <meta name="description" content="Photo gallery of The Ponds: a contemporary 6-bedroom family home in Goostrey, Cheshire. Interiors, exteriors, gardens and architectural details.">
+
+  <!-- Fonts -->
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700&f[]=switzer@300,400,500,600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./gallery.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="header">
+    <div class="header-inner">
+      <a href="./" class="logo" aria-label="The Ponds — home">
+        <svg width="32" height="32" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M8 38c0 0 12-8 24-8s24 8 24 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M14 42c0 0 8-5 18-5s18 5 18 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M20 46c0 0 5-3 12-3s12 3 12 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M16 30L32 16L48 30" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="24" y1="30" x2="24" y2="24" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="40" y1="30" x2="40" y2="24" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        <span class="logo-text">The Ponds</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" role="list">
+          <li><a href="./#overview">Overview</a></li>
+          <li><a href="./gallery.html" class="is-active">Gallery</a></li>
+          <li><a href="./#details">Details</a></li>
+          <li><a href="./#location">Location</a></li>
+          <li><a href="./#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="./#overview">Overview</a>
+    <a href="./gallery.html">Gallery</a>
+    <a href="./#details">Details</a>
+    <a href="./#location">Location</a>
+    <a href="./#contact">Contact</a>
+  </div>
+
+  <!-- ===== GALLERY PAGE HERO ===== -->
+  <section class="gallery-hero">
+    <div class="gallery-hero-inner">
+      <p class="section-label">Photography</p>
+      <h1 class="gallery-page-title">Gallery</h1>
+    </div>
+  </section>
+
+  <!-- ===== FILTER TABS ===== -->
+  <div class="gallery-filters" id="gallery-filters">
+    <div class="filters-inner">
+      <button class="filter-btn is-active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="exterior">Exterior</button>
+      <button class="filter-btn" data-filter="interior">Interior</button>
+      <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+      <button class="filter-btn" data-filter="bedroom">Bedrooms</button>
+      <button class="filter-btn" data-filter="bathroom">Bathrooms</button>
+      <button class="filter-btn" data-filter="garden">Gardens</button>
+      <button class="filter-btn" data-filter="detail">Details</button>
+    </div>
+  </div>
+
+  <!-- ===== GALLERY GRID ===== -->
+  <section class="gallery-page-section">
+    <div class="gallery-page-inner">
+      <div class="gallery-page-grid" id="gallery-grid">
+
+        <!-- EXTERIOR -->
+        <figure class="gp-item gp-item--wide" data-category="exterior">
+          <img src="./assets/images/hero-rear.jpg" alt="Rear exterior with south-facing landscaped gardens and Crittall glazing" loading="lazy" width="1200" height="600">
+          <figcaption>Rear Elevation</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="exterior">
+          <img src="./assets/images/front-exterior.jpg" alt="Front facade with mellow brick, formal parterre garden and gravel driveway" loading="lazy" width="600" height="600">
+          <figcaption>Front Facade</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="exterior">
+          <img src="./assets/images/instagram/17851102447284269.jpg" alt="Front garden with curved block-paved driveway and circular water feature" loading="lazy" width="600" height="600">
+          <figcaption>Driveway &amp; Landscaping</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="exterior">
+          <img src="./assets/images/instagram/17847487303281061.jpg" alt="Rear elevation at dusk — kitchen extension with Crittall glazing glowing from inside" loading="lazy" width="600" height="600">
+          <figcaption>Rear at Dusk</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="exterior">
+          <img src="./assets/images/aerial.jpg" alt="Aerial view showing the full 0.83-acre plot with house, gardens and countryside" loading="lazy" width="600" height="600">
+          <figcaption>Aerial View</figcaption>
+        </figure>
+
+        <!-- KITCHEN -->
+        <figure class="gp-item gp-item--wide" data-category="kitchen interior">
+          <img src="./assets/images/kitchen-1.jpg" alt="Bespoke Hetherington Newman kitchen with polished concrete worktops and copper breakfast bar" loading="lazy" width="1200" height="600">
+          <figcaption>Bespoke Kitchen</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="kitchen interior">
+          <img src="./assets/images/instagram/17848355641289923.jpg" alt="Kitchen dining room with dark lacquered ceiling, globe pendants and Crittall windows" loading="lazy" width="600" height="600">
+          <figcaption>Kitchen &amp; Dining</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="kitchen interior">
+          <img src="./assets/images/instagram/17947663846154223.jpg" alt="Kitchen with brass-finish island, bar stools, open steel shelving and floating staircase" loading="lazy" width="600" height="600">
+          <figcaption>Brass Kitchen Island</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="kitchen interior">
+          <img src="./assets/images/kitchen-2.jpg" alt="Kitchen viewed from the dining area showing open-plan layout" loading="lazy" width="600" height="600">
+          <figcaption>Kitchen</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="kitchen interior">
+          <img src="./assets/images/kitchen-dining.jpg" alt="Open-plan kitchen and dining space with views to garden" loading="lazy" width="600" height="600">
+          <figcaption>Kitchen Dining</figcaption>
+        </figure>
+
+        <!-- LIVING SPACES -->
+        <figure class="gp-item gp-item--wide" data-category="interior">
+          <img src="./assets/images/living-room.jpg" alt="South-facing living room with feature fireplace and oak parquet flooring" loading="lazy" width="1200" height="600">
+          <figcaption>Living Room</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="interior">
+          <img src="./assets/images/hallway.jpg" alt="Galleried entrance hall with modern oak and wrought-iron staircase" loading="lazy" width="600" height="600">
+          <figcaption>Entrance Hall</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="interior">
+          <img src="./assets/images/dining-room.jpg" alt="Dining room with black and white tiled floor and two glazed elevations" loading="lazy" width="600" height="600">
+          <figcaption>Dining Room</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="interior">
+          <img src="./assets/images/sitting-room.jpg" alt="Light-filled sitting room with large picture windows" loading="lazy" width="600" height="600">
+          <figcaption>Sitting Room</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="interior">
+          <img src="./assets/images/media-room.jpg" alt="Media room with projector screen and surround sound system" loading="lazy" width="600" height="600">
+          <figcaption>Media Room</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="interior">
+          <img src="./assets/images/landing.jpg" alt="Dark moody landing with architectural lighting" loading="lazy" width="600" height="600">
+          <figcaption>Landing</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="interior">
+          <img src="./assets/images/bar-utility.jpg" alt="Bar and utility area" loading="lazy" width="600" height="600">
+          <figcaption>Bar &amp; Utility</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="interior">
+          <img src="./assets/images/boot-room.jpg" alt="Boot room with practical storage" loading="lazy" width="600" height="600">
+          <figcaption>Boot Room</figcaption>
+        </figure>
+
+        <!-- BEDROOMS -->
+        <figure class="gp-item gp-item--wide" data-category="bedroom interior">
+          <img src="./assets/images/master-bedroom.jpg" alt="Principal bedroom suite with south-facing views" loading="lazy" width="1200" height="600">
+          <figcaption>Principal Bedroom</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="bedroom interior">
+          <img src="./assets/images/instagram/17846808133292834.jpg" alt="Master bedroom at golden hour — large Crittall window and decorative mirror" loading="lazy" width="600" height="600">
+          <figcaption>Principal Suite — Golden Hour</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="bedroom interior">
+          <img src="./assets/images/bedroom-2.jpg" alt="Bright double bedroom with garden views" loading="lazy" width="600" height="600">
+          <figcaption>Bedroom Two</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="bedroom interior">
+          <img src="./assets/images/bedroom-3.jpg" alt="Bold burgundy bedroom with contemporary styling" loading="lazy" width="600" height="600">
+          <figcaption>Bedroom Three</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="bedroom interior">
+          <img src="./assets/images/bedroom-4.jpg" alt="Clean white bedroom with minimal design" loading="lazy" width="600" height="600">
+          <figcaption>Bedroom Four</figcaption>
+        </figure>
+
+        <!-- BATHROOMS -->
+        <figure class="gp-item gp-item--wide" data-category="bathroom interior">
+          <img src="./assets/images/instagram/17849807290283641.jpg" alt="Freestanding cast-iron bath under vaulted apex window with countryside views" loading="lazy" width="1200" height="600">
+          <figcaption>Freestanding Bath — Apex Window</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="bathroom interior">
+          <img src="./assets/images/master-bath.jpg" alt="Freestanding bath with metro tiles and skylights" loading="lazy" width="600" height="600">
+          <figcaption>Principal En Suite</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="bathroom interior">
+          <img src="./assets/images/dressing-bath.jpg" alt="Dressing room with freestanding bath and rural views" loading="lazy" width="600" height="600">
+          <figcaption>Dressing Room Bath</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="bathroom interior">
+          <img src="./assets/images/shower-room.jpg" alt="Contemporary en-suite shower room with large format tiles" loading="lazy" width="600" height="600">
+          <figcaption>Shower Room</figcaption>
+        </figure>
+
+        <!-- GARDENS -->
+        <figure class="gp-item gp-item--wide" data-category="garden">
+          <img src="./assets/images/garden-terrace.jpg" alt="Garden terrace with outdoor furniture and views across manicured lawns" loading="lazy" width="1200" height="600">
+          <figcaption>Garden Terrace</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="garden">
+          <img src="./assets/images/rear-terrace.jpg" alt="Rear terrace with mature planting" loading="lazy" width="600" height="600">
+          <figcaption>Rear Terrace</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="garden">
+          <img src="./assets/images/garden-view.jpg" alt="Elevated view across the gardens showing mature landscaping" loading="lazy" width="600" height="600">
+          <figcaption>Garden View</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="garden">
+          <img src="./assets/images/greenhouse.jpg" alt="Greenhouse and raised vegetable beds" loading="lazy" width="600" height="600">
+          <figcaption>Greenhouse</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="garden">
+          <img src="./assets/images/orchard.jpg" alt="Orchard with pear and apple trees" loading="lazy" width="600" height="600">
+          <figcaption>Orchard</figcaption>
+        </figure>
+
+        <!-- DETAILS -->
+        <figure class="gp-item" data-category="detail">
+          <img src="./assets/images/instagram/17858482666277791.jpg" alt="Statement chandelier with cylindrical crystal elements" loading="lazy" width="600" height="600">
+          <figcaption>Statement Chandelier</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="detail">
+          <img src="./assets/images/instagram/17947744705145840.jpg" alt="Industrial-style bar stools and steel balustrading" loading="lazy" width="600" height="600">
+          <figcaption>Bar Stools</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="detail">
+          <img src="./assets/images/instagram/17947985071126345.jpg" alt="Coffee station with commercial espresso machine and open steel shelving" loading="lazy" width="600" height="600">
+          <figcaption>Coffee Station</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="detail exterior">
+          <img src="./assets/images/instagram/17850326446273726.jpg" alt="Aged yellow stock brick detail — architectural character" loading="lazy" width="600" height="600">
+          <figcaption>Brick Detail</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="detail exterior">
+          <img src="./assets/images/instagram/17933232961155709.jpg" alt="118 The Ponds — laser-cut steel house sign on yellow brick" loading="lazy" width="600" height="600">
+          <figcaption>House Sign</figcaption>
+        </figure>
+
+        <figure class="gp-item" data-category="detail exterior">
+          <img src="./assets/images/instagram/17947625836135051.jpg" alt="118 The Ponds sign illuminated at night by wall lantern" loading="lazy" width="600" height="600">
+          <figcaption>House Sign — Night</figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BACK TO HOME ===== -->
+  <section class="gallery-back">
+    <a href="./" class="btn-gallery">Back to Home</a>
+    <a href="./#contact" class="btn-gallery btn-gallery--accent">Arrange a Viewing</a>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <address class="footer-address">The Ponds, 118 Main Road, Goostrey, Cheshire CW4 8JR</address>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/theponds118/" target="_blank" rel="noopener noreferrer">Instagram @theponds118</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 The Ponds. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" aria-label="Close image viewer">&times;</button>
+    <button class="lightbox-prev" aria-label="Previous image">&#8592;</button>
+    <button class="lightbox-next" aria-label="Next image">&#8594;</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+
+  <script src="./gallery.js" defer></script>
+</body>
+</html>

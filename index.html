@@ -13,10 +13,7 @@
   <meta property="og:type" content="website">
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700&f[]=switzer@300,400,500,600&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="./base.css">
@@ -44,7 +41,7 @@
       <nav>
         <ul class="nav-links" role="list">
           <li><a href="#overview">Overview</a></li>
-          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
           <li><a href="#details">Details</a></li>
           <li><a href="#location">Location</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -67,16 +64,19 @@
   <!-- ===== MOBILE MENU ===== -->
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
     <a href="#overview">Overview</a>
-    <a href="#gallery">Gallery</a>
+    <a href="./gallery.html">Gallery</a>
     <a href="#details">Details</a>
     <a href="#location">Location</a>
     <a href="#contact">Contact</a>
   </div>
 
-  <!-- ===== HERO ===== -->
+  <!-- ===== HERO (Video) ===== -->
   <section class="hero" id="hero">
     <div class="hero-bg">
-      <img src="./assets/images/hero-rear.jpg" alt="The Ponds — rear exterior view showing contemporary architecture with south-facing landscaped gardens" width="1600" height="1000" fetchpriority="high">
+      <video class="hero-video" autoplay muted loop playsinline poster="./assets/video/hero-video-poster.jpg">
+        <source src="./assets/video/hero-video.mp4" type="video/mp4">
+      </video>
+      <img class="hero-fallback" src="./assets/images/hero-rear.jpg" alt="The Ponds — rear exterior view showing contemporary architecture with south-facing landscaped gardens" width="1600" height="1000" fetchpriority="high">
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
@@ -129,85 +129,25 @@
     </div>
   </section>
 
-  <!-- ===== GALLERY ===== -->
+  <!-- ===== GALLERY TEASER ===== -->
   <section class="section bg-surface" id="gallery">
     <div class="section-inner">
-      <p class="section-label fade-in">Interiors</p>
+      <p class="section-label fade-in">Interiors &amp; Exteriors</p>
       <h2 class="section-title fade-in">A Tour of The Ponds</h2>
 
-      <div class="gallery-grid fade-in" id="gallery-grid">
-        <figure class="gallery-item gallery-item--large" data-index="0">
-          <img src="./assets/images/kitchen-1.jpg" alt="Bespoke Hetherington Newman kitchen with polished concrete worktops and copper breakfast bar" loading="lazy" width="800" height="600">
-          <figcaption>Bespoke Kitchen</figcaption>
+      <div class="gallery-teaser fade-in">
+        <figure class="teaser-img">
+          <img src="./assets/images/kitchen-1.jpg" alt="Bespoke Hetherington Newman kitchen" loading="lazy" width="800" height="600">
         </figure>
-        <figure class="gallery-item" data-index="1">
-          <img src="./assets/images/living-room.jpg" alt="South-facing living room with feature fireplace and oak parquet flooring" loading="lazy" width="600" height="600">
-          <figcaption>Living Room</figcaption>
+        <figure class="teaser-img">
+          <img src="./assets/images/instagram/17847487303281061.jpg" alt="Rear elevation at dusk with Crittall glazing" loading="lazy" width="800" height="600">
         </figure>
-        <figure class="gallery-item" data-index="2">
-          <img src="./assets/images/hallway.jpg" alt="Galleried entrance hall with modern oak and wrought-iron staircase" loading="lazy" width="600" height="600">
-          <figcaption>Entrance Hall</figcaption>
+        <figure class="teaser-img">
+          <img src="./assets/images/instagram/17849807290283641.jpg" alt="Freestanding bath with apex window" loading="lazy" width="800" height="600">
         </figure>
-        <figure class="gallery-item" data-index="3">
-          <img src="./assets/images/dining-room.jpg" alt="Dining room with black and white tiled floor and two glazed elevations" loading="lazy" width="600" height="600">
-          <figcaption>Dining Room</figcaption>
-        </figure>
-        <figure class="gallery-item" data-index="4">
-          <img src="./assets/images/sitting-room.jpg" alt="Light-filled sitting room with large picture windows" loading="lazy" width="600" height="600">
-          <figcaption>Sitting Room</figcaption>
-        </figure>
-        <figure class="gallery-item" data-index="5">
-          <img src="./assets/images/master-bedroom.jpg" alt="Principal bedroom suite with south-facing views" loading="lazy" width="600" height="600">
-          <figcaption>Principal Bedroom</figcaption>
-        </figure>
-        <figure class="gallery-item" data-index="6">
-          <img src="./assets/images/master-bath.jpg" alt="Freestanding bath with metro tiles and skylights in the en suite" loading="lazy" width="600" height="600">
-          <figcaption>Principal Bath</figcaption>
-        </figure>
-        <figure class="gallery-item" data-index="7">
-          <img src="./assets/images/kitchen-2.jpg" alt="Kitchen viewed from the dining area showing open-plan layout" loading="lazy" width="600" height="600">
-          <figcaption>Kitchen</figcaption>
-        </figure>
-        <figure class="gallery-item" data-index="8">
-          <img src="./assets/images/kitchen-dining.jpg" alt="Open-plan kitchen and dining space with views to garden" loading="lazy" width="600" height="600">
-          <figcaption>Kitchen Dining</figcaption>
-        </figure>
-        <figure class="gallery-item" data-index="9">
-          <img src="./assets/images/media-room.jpg" alt="Media room with projector screen and surround sound system" loading="lazy" width="600" height="600">
-          <figcaption>Media Room</figcaption>
-        </figure>
-        <figure class="gallery-item" data-index="10">
-          <img src="./assets/images/bedroom-2.jpg" alt="Bright double bedroom with garden views" loading="lazy" width="600" height="600">
-          <figcaption>Bedroom Two</figcaption>
-        </figure>
-        <figure class="gallery-item" data-index="11">
-          <img src="./assets/images/bedroom-3.jpg" alt="Bold burgundy bedroom with contemporary styling" loading="lazy" width="600" height="600">
-          <figcaption>Bedroom Three</figcaption>
-        </figure>
-        <figure class="gallery-item" data-index="12">
-          <img src="./assets/images/bedroom-4.jpg" alt="Clean white bedroom with minimal design" loading="lazy" width="600" height="600">
-          <figcaption>Bedroom Four</figcaption>
-        </figure>
-        <figure class="gallery-item" data-index="13">
-          <img src="./assets/images/dressing-bath.jpg" alt="Dressing room with freestanding bath and rural views through picture window" loading="lazy" width="600" height="600">
-          <figcaption>Dressing Room Bath</figcaption>
-        </figure>
-        <figure class="gallery-item" data-index="14">
-          <img src="./assets/images/shower-room.jpg" alt="Contemporary en-suite shower room with large format tiles" loading="lazy" width="600" height="600">
-          <figcaption>Shower Room</figcaption>
-        </figure>
-        <figure class="gallery-item" data-index="15">
-          <img src="./assets/images/bar-utility.jpg" alt="Bar and utility area" loading="lazy" width="600" height="600">
-          <figcaption>Bar / Utility</figcaption>
-        </figure>
-        <figure class="gallery-item" data-index="16">
-          <img src="./assets/images/boot-room.jpg" alt="Boot room with practical storage" loading="lazy" width="600" height="600">
-          <figcaption>Boot Room</figcaption>
-        </figure>
-        <figure class="gallery-item" data-index="17">
-          <img src="./assets/images/landing.jpg" alt="Dark moody landing and hallway with architectural lighting" loading="lazy" width="600" height="600">
-          <figcaption>Landing</figcaption>
-        </figure>
+      </div>
+      <div class="gallery-cta fade-in">
+        <a href="./gallery.html" class="btn-gallery">View Full Gallery</a>
       </div>
     </div>
   </section>
