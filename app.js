@@ -142,34 +142,44 @@
     if (e.key === 'ArrowRight') showNext();
   });
 
-  // ---- Contact Form → mailto: ----
+  // ---- Contact Form (Netlify Forms via AJAX) ----
   const contactForm = document.getElementById('contact-form');
   const formSuccess = document.getElementById('form-success');
-  const CONTACT_EMAIL = 'farrarmattt@gmail.com';
+  const submitBtn = contactForm ? contactForm.querySelector('.btn-submit') : null;
 
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      const name = contactForm.querySelector('#name').value.trim();
-      const email = contactForm.querySelector('#email').value.trim();
-      const phone = contactForm.querySelector('#phone').value.trim();
-      const message = contactForm.querySelector('#message').value.trim();
+      // Disable button while submitting
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending…';
+      }
 
-      const subject = encodeURIComponent('The Ponds — Enquiry from ' + name);
-      const body = encodeURIComponent(
-        'Name: ' + name + '\n' +
-        'Email: ' + email + '\n' +
-        (phone ? 'Telephone: ' + phone + '\n' : '') +
-        '\n' + (message || 'I would like to arrange a viewing.')
-      );
+      const formData = new FormData(contactForm);
 
-      // Open the user's email client with the composed message
-      window.location.href = 'mailto:' + CONTACT_EMAIL + '?subject=' + subject + '&body=' + body;
-
-      // Show success state
-      contactForm.style.display = 'none';
-      formSuccess.classList.add('is-visible');
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString()
+      })
+      .then(response => {
+        if (response.ok) {
+          contactForm.style.display = 'none';
+          formSuccess.classList.add('is-visible');
+        } else {
+          throw new Error('Form submission failed');
+        }
+      })
+      .catch(error => {
+        console.error(error);
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Send Enquiry';
+        }
+        alert('Sorry, there was a problem sending your enquiry. Please email us directly.');
+      });
     });
   }
 

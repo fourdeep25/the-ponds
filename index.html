@@ -371,7 +371,9 @@
         </div>
 
         <div>
-          <form class="contact-form" id="contact-form">
+          <form class="contact-form" id="contact-form" name="enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="enquiry">
+            <p class="hidden" style="display:none"><input name="bot-field"></p>
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" placeholder="Your full name" required>
