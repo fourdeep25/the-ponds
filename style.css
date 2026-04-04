@@ -333,23 +333,10 @@ a:hover { color: var(--color-accent-hover); }
   z-index: 0;
 }
 
-.hero-video {
+.hero-bg img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.hero-fallback {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: none;
-}
-
-/* If video isn't supported, show fallback image */
-.hero-video:not([src]) ~ .hero-fallback,
-.hero-bg:not(:has(video)) .hero-fallback {
-  display: block;
 }
 
 .hero-overlay {
