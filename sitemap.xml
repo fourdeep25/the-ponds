@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.the-ponds.co.uk/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.the-ponds.co.uk/assets/images/hero-rear.jpg</image:loc>
+      <image:caption>The Ponds rear elevation — contemporary 6-bedroom home in Goostrey, Cheshire</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.the-ponds.co.uk/assets/images/front-exterior.jpg</image:loc>
+      <image:caption>The Ponds front facade with formal parterre garden and gravel driveway</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.the-ponds.co.uk/assets/images/kitchen-1.jpg</image:loc>
+      <image:caption>Bespoke Hetherington Newman kitchen with Gaggenau appliances</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.the-ponds.co.uk/assets/images/new/IMG_5081.jpg</image:loc>
+      <image:caption>The Ponds rear elevation at dusk with illuminated terrace and garden</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.the-ponds.co.uk/gallery.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
