@@ -436,80 +436,23 @@
       <p class="section-label fade-in">Enquiries</p>
       <h2 class="section-title fade-in">Arrange a Viewing</h2>
 
-      <div class="contact-layout fade-in">
+      <div class="contact-layout contact-layout--embed fade-in">
         <div class="contact-intro">
-          <p>To arrange a private viewing of The Ponds, or to request further information about this exceptional property, please complete the form or contact us directly.</p>
-          <a href="#contact-form" class="contact-email">Send an Enquiry</a>
+          <p>To arrange a private viewing of The Ponds, please complete the qualification form below. This helps us understand your position and prioritise serious buyers.</p>
+          <p class="contact-powered">Powered by <a href="https://www.viewready.co.uk" target="_blank" rel="noopener noreferrer">ViewReady</a></p>
         </div>
 
-        <div>
-          <form class="contact-form" id="contact-form" name="enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="enquiry">
-            <p class="hidden" style="display:none"><input name="bot-field"></p>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your full name" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="your@email.com" required>
-            </div>
-            <div class="form-group">
-              <label for="phone">Telephone</label>
-              <input type="tel" id="phone" name="phone" placeholder="+44">
-            </div>
-            <div class="form-group">
-              <label for="status">Your Buying Position</label>
-              <select id="status" name="status">
-                <option value="" disabled selected>Please select</option>
-                <option value="Chain-free / cash buyer">Chain-free / cash buyer</option>
-                <option value="Property sold STC">Property sold (STC)</option>
-                <option value="Property on the market">Property on the market</option>
-                <option value="Yet to list">Yet to list</option>
-                <option value="Investor">Investor</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="timescale">Timescale</label>
-              <select id="timescale" name="timescale">
-                <option value="" disabled selected>Please select</option>
-                <option value="Ready to proceed">Ready to proceed</option>
-                <option value="Within 3 months">Within 3 months</option>
-                <option value="Within 6 months">Within 6 months</option>
-                <option value="Exploring options">Exploring options</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="funding">Funding</label>
-              <select id="funding" name="funding">
-                <option value="" disabled selected>Please select</option>
-                <option value="Cash">Cash</option>
-                <option value="Mortgage agreed in principle">Mortgage agreed in principle</option>
-                <option value="Mortgage — yet to apply">Mortgage — yet to apply</option>
-                <option value="Part cash / part mortgage">Part cash / part mortgage</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="found-via">How Did You Find Us?</label>
-              <select id="found-via" name="found-via">
-                <option value="" disabled selected>Please select</option>
-                <option value="Rightmove">Rightmove</option>
-                <option value="Zoopla">Zoopla</option>
-                <option value="OnTheMarket">OnTheMarket</option>
-                <option value="Instagram">Instagram</option>
-                <option value="Word of mouth">Word of mouth</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="I would like to arrange a viewing…"></textarea>
-            </div>
-            <button type="submit" class="btn-submit">Send Enquiry</button>
-          </form>
-          <div class="form-success" id="form-success">
-            <p><strong>Thank you</strong>We have received your enquiry and will be in touch shortly.</p>
-          </div>
+        <div class="viewready-embed">
+          <iframe 
+            src="https://viewready.onrender.com/#/qualify/1" 
+            title="ViewReady buyer qualification form for The Ponds"
+            width="100%" 
+            height="820" 
+            frameborder="0"
+            style="border: none; border-radius: 12px;"
+            allow="clipboard-write"
+            loading="lazy">
+          </iframe>
         </div>
       </div>
     </div>

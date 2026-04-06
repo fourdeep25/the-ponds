@@ -1229,6 +1229,40 @@ a:hover { color: var(--color-accent-hover); }
 }
 
 /* ============================================================
+   VIEWREADY EMBED
+   ============================================================ */
+.contact-layout--embed {
+  display: block;
+}
+
+.contact-layout--embed .contact-intro {
+  max-width: var(--content-narrow);
+  margin-bottom: var(--space-8);
+}
+
+.contact-powered {
+  font-size: var(--text-xs);
+  color: var(--color-text-faint);
+  margin-top: var(--space-3);
+}
+
+.contact-powered a {
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+.viewready-embed {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.viewready-embed iframe {
+  width: 100%;
+  min-height: 820px;
+}
+
+/* ============================================================
    PERMITTED DEVELOPMENT / POTENTIAL
    ============================================================ */
 .potential-intro {
