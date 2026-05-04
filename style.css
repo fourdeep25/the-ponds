@@ -990,6 +990,10 @@ a:hover { color: var(--color-accent-hover); }
     gap: var(--space-16);
     align-items: start;
   }
+  .location-grid--no-map {
+    grid-template-columns: 1fr;
+    max-width: var(--content-narrow);
+  }
 }
 
 /* ============================================================
